@@ -1,6 +1,7 @@
 // import Image from "next/image";
 // import { FaFacebook, FaInstagram } from "react-icons/fa";
 // import { FaWhatsapp } from "react-icons/fa6";
+import * as motion from "motion/react-client"
 
 export default function Home() {
   return (
@@ -31,7 +32,10 @@ export default function Home() {
           <li><button><FaWhatsapp /></button></li>
         </menu>
       </header> */}
-      <main className="w-full h-screen bg-linear-to-r from-[var(--theme-color-3)] to-[var(--theme-color-2)]">
+      <main className="w-full h-screen bg-linear-to-r from-[var(--theme-color-3)] to-[var(--theme-color-2)] flex items-center">
+      <motion.p initial={{ opacity: 0, x:-300 }}
+           whileInView={{x:10, opacity: 1, transition: { duration: 2 }}
+    } className="text-6xl ">O Primeiro <strong>Salão de Beleza</strong><br />por assinatura de<br />Pedra de Guaratiba</motion.p>
       </main>
       <footer>
       </footer>
