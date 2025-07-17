@@ -1,11 +1,11 @@
-import Image from "next/image";
-import { FaFacebook, FaInstagram } from "react-icons/fa";
-import { FaWhatsapp } from "react-icons/fa6";
+// import Image from "next/image";
+// import { FaFacebook, FaInstagram } from "react-icons/fa";
+// import { FaWhatsapp } from "react-icons/fa6";
 
 export default function Home() {
   return (
     <div className="flex justify-center font-[Albert_Sans]">
-      <header className="w-full lg:w-7xl m-2 lg:m-4">
+      {/* <header className="w-full lg:w-7xl m-2 lg:m-4">
         <div className="flex items-center">
           <Image 
             src="/clair-de-lune.svg"
@@ -30,8 +30,8 @@ export default function Home() {
           <li><button><FaInstagram /></button></li>
           <li><button><FaWhatsapp /></button></li>
         </menu>
-      </header>
-      <main>
+      </header> */}
+      <main className="w-full h-screen bg-linear-to-r from-[var(--theme-color-3)] to-[var(--theme-color-2)]">
       </main>
       <footer>
       </footer>
