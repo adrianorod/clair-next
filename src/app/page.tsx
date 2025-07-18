@@ -1,11 +1,12 @@
-import Image from "next/image";
-import { FaFacebook, FaInstagram } from "react-icons/fa";
-import { FaWhatsapp } from "react-icons/fa6";
+// import Image from "next/image";
+// import { FaFacebook, FaInstagram } from "react-icons/fa";
+// import { FaWhatsapp } from "react-icons/fa6";
+import * as motion from "motion/react-client"
 
 export default function Home() {
   return (
     <div className="flex justify-center font-[Albert_Sans]">
-      <header className="w-full lg:w-7xl m-2 lg:m-4">
+      {/* <header className="w-full lg:w-7xl m-2 lg:m-4">
         <div className="flex items-center">
           <Image 
             src="/clair-de-lune.svg"
@@ -30,11 +31,14 @@ export default function Home() {
           <li><button><FaInstagram /></button></li>
           <li><button><FaWhatsapp /></button></li>
         </menu>
-      </header>
-      <main>
-      </main>
+      </header> */}
+      <main className="w-full h-screen bg-linear-to-r from-[var(--theme-color-3)] to-[var(--theme-color-2)] md:flex items-center">
+      <motion.p initial={{ opacity: 0, x:-200 }}
+           whileInView={{x:0, opacity: 1, transition: { duration: 1.5 }}
+    } className="text-[42px] md:text-6xl text-center md:text-left max-w-180 ">Primeiro <br/><strong>Salão de Beleza</strong> <br/>Por assinatura  de<br/> <strong>Pedra de Guaratiba</strong></motion.p>
+      </main> 
       <footer>
       </footer>
     </div>
-  );
+  )
 }

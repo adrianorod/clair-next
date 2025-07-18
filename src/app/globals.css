@@ -2,20 +2,19 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #000000;
+  --font-albert-sans: 'Albert Sans', sans-serif;
+  --theme-color-1: #000000;
+  --theme-color-2: #c8a451;
+  --theme-color-3: #f2d7d0;
+  --theme-color-4: #a3b8c8;
+  --theme-color-5: #ffffff;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-albert-sans);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
