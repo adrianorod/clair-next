@@ -32,13 +32,13 @@ export default function Home() {
           <li><button><FaWhatsapp /></button></li>
         </menu>
       </header> */}
-      <main className="w-full h-screen bg-linear-to-r from-[var(--theme-color-3)] to-[var(--theme-color-2)] flex items-center">
-      <motion.p initial={{ opacity: 0, x:-300 }}
-           whileInView={{x:10, opacity: 1, transition: { duration: 2 }}
-    } className="text-6xl ">O Primeiro <strong>Salão de Beleza</strong><br />por assinatura de<br />Pedra de Guaratiba</motion.p>
-      </main>
+      <main className="w-full h-screen bg-linear-to-r from-[var(--theme-color-3)] to-[var(--theme-color-2)] md:flex items-center">
+      <motion.p initial={{ opacity: 0, x:-200 }}
+           whileInView={{x:0, opacity: 1, transition: { duration: 1.5 }}
+    } className="text-[42px] md:text-6xl text-center md:text-left max-w-180 ">Primeiro <br/><strong>Salão de Beleza</strong> <br/>Por assinatura  de<br/> <strong>Pedra de Guaratiba</strong></motion.p>
+      </main> 
       <footer>
       </footer>
     </div>
-  );
+  )
 }
